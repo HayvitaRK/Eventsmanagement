@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>events</title>
+<!--    title icon-->
+    <link rel="icon" type="image/x-icon" href="logo.png">
+<!--    styleheet-->
+    <link rel="stylesheet" href="wtstyles.css">
+</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="stylesheet.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+
+body, html {
+  height: 100%;
+  line-height: 1.8;
+}
+
+/* Full height image header */
+.bgimg-1 {
+  background-position: center;
+  background-size: cover;
+  background-image: url("images/wallaper3.jpg");
+  min-height: 100%;
+}
+
+.w3-bar .w3-button {
+  padding: 16px;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+    <div class="w3-bar w3-white w3-card" id="myNavbar">
+        <a href="#home" class="w3-bar-item w3-button w3-large"><b>Moment makers</b></a>
+        <!-- Right-sided navbar links -->
+        <div class="w3-right w3-hide-small">
+            <!-- <a href="#about" class="w3-bar-item w3-button">ABOUT</a> -->
+            <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> AGENTS</a>
+            <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-th"></i> EVENTS</a>
+            <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-usd"></i> PACKAGES</a>
+            <a href="agent_login_page.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> AGENT LOGIN</a>
+            <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+        </div>
+        <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+        <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <!--<a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a> -->
+    <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">AGENTS</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">EVENTS</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PACKAGES</a>
+    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">AGENT LOGIN</a
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+    <div class="w3-display-left w3-text-white" style="padding:48px">
+        <span class="w3-jumbo w3-hide-small black"><b>Things end,<br> but memories lasts forever.<b></span><br>
+        <span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>Start something that matters<b>.</span><br>
+        <span class="w3-large black">Relax and be a guest at your own party.</span>
+        <p><a href="#team" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">book now</a></p>
+    </div>
+    <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+</header>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>We know design.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+            <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+        </div>
+        <div class="w3-col m6">
+            <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+        </div>
+    </div>
+</div>
+
+
+<!-- MARVELLOUS
+THE SUN  -->
+<!-- Agents Section -->
+<div class="w3-container" style="padding:128px 16px" id="team">
+    <h3 class="w3-center">OUR AGENTS</h3>
+    <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
+    <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="images/chef.jpg" alt="John" style="width:100% ; height:200px;">
+                <div class="w3-container">
+                    <h3>CATERING SERVICES</h3>
+                    <!-- <p class="w3-opacity">CEO & Founder</p> -->
+                    <p>The category encompasses special events such as birthday parties, retirement celebrations,baby showers.
+                        Appetizers and servers are included in social event catering packages.</p>
+                    <p><button class="w3-button w3-light-grey w3-block" onclick="cat"><i class="fa fa-envelope"></i> LIST</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="images/decors3.jpg" alt="Jane" style="width:100% ; height:200px;">
+                <div class="w3-container">
+                    <h3>DECORS</h3>
+                    <p>To improve the look and feel of your home.There are many different types of decorating styles.
+                        The most important consideration is what type of feeling you wish to bring into your home.</p>
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> LIST</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom" >
+            <div class="w3-card">
+                <img src="images/banquethall.jpg" alt="Mike" style="width:100% ; height:200px;">
+                <div class="w3-container">
+                    <h3>BANQUET HALLS</h3>
+                    <p>Book your favorite place to hold your beautiful occasion.The more people the more love and caring . Let's make the day more special for you and your loved ones.</p>
+
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> LIST</button></p>
+                </div>
+            </div>
+        </div>
+        <div class="w3-col l3 m6 w3-margin-bottom">
+            <div class="w3-card">
+                <img src="images/makeup.jpg" alt="Dan" style="width:100%">
+                <div class="w3-container">
+                    <h3>MAKEUP ARTISTS</h3>
+                    <p>Change the look and feel to be special on your special day.
+                        Let's add more beauty to the beautiest.
+                    </p>
+                    <br>
+                    <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> LIST</button></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal cat" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Modal title</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Modal body text goes here.</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">14+</span>
+        <br>Partners
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">55+</span>
+        <br>Projects Done
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">89+</span>
+        <br>Happy Clients
+    </div>
+    <div class="w3-quarter">
+        <span class="w3-xxlarge">150+</span>
+        <br>Meetings
+    </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+    <h3 class="w3-center">OUR WORKS</h3>
+    <p class="w3-center w3-large">What we've done for people</p>
+
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-col l3 m6">
+            <img src="images/anniversary.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="anniversary event" >
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/catering.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="catering services" >
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/birthday.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Birthday event">
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/wed.jpeg" style="width: 100%; height:200px;"  onclick="onClick(this)" class="w3-hover-opacity" alt="Wedding event" >
+        </div>
+    </div>
+
+    <div class="w3-row-padding w3-section">
+        <div class="w3-col l3 m6">
+            <img src="images/food.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Food" >
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/hybrid-event-environment.jpeg" style="width: 100%; height:200px;"  onclick="onClick(this)" class="w3-hover-opacity" alt="Conference Hall" >
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/baby-shower.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Baby Shower" >
+        </div>
+        <div class="w3-col l3 m6">
+            <img src="images/bride.jpeg" style="width: 100%; height:200px;" onclick="onClick(this)" class="w3-hover-opacity" alt="Bridal Shower" >
+        </div>
+    </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+        <img id="images/img01" class="w3-image">
+        <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+</div>
+
+<!-- Skills Section -->
+<div class="w3-container w3-light-grey w3-padding-64">
+    <div class="w3-row-padding">
+        <div class="w3-col m6">
+            <h3>Our Skills.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                tempor incididunt ut labore et dolore.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>
+                tempor incididunt ut labore et dolore.</p>
+        </div>
+        <div class="w3-col m6">
+            <p class="w3-wide"><i class="fa fa-camera w3-margin-right"></i>Photography</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:90%">90%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-desktop w3-margin-right"></i>Web Design</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:85%">85%</div>
+            </div>
+            <p class="w3-wide"><i class="fa fa-photo w3-margin-right"></i>Photoshop</p>
+            <div class="w3-grey">
+                <div class="w3-container w3-dark-grey w3-center" style="width:75%">75%</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Pricing Section -->
+<!-- Package Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+    <h3>Packages</h3>
+    <p class="w3-large">Choose the best package chosen by others..</p>
+    <div class="w3-row-padding" style="margin-top:64px">
+        <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">Birthday celebration</li>
+                <div class="bday-pricing">
+                    <li class="w3-padding-16"><span style="background-color: white;font-size: large;font-weight: bold;"> Decorations<br><br>Food<br><br>B'day cards</span></li>
+                    <!--<li class="w3-padding-16"><b>10</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li> -->
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide">Rs.10,000</h2>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">Book</button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="w3-third">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-red w3-xlarge w3-padding-48">Marriage</li>
+                <div class="marriage-pricing">
+                    <li class="w3-padding-16"><span style="background-color: rgb(223, 173, 80);font-size: large;font-weight: bold;">Wedding Hall<br><br> Decorations<br> <br>Catering<br><br>Wedding Cards</span></li>
+                    <!-- <li class="w3-padding-16"><b>25</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li> -->
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><span style="background-color: rgb(223, 173, 80)">Rs.25,000</h2></span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24 w3-wide">
+                        <button class="w3-button w3-black w3-padding-large">Book</button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+        <div class="w3-third w3-section">
+            <ul class="w3-ul w3-white w3-hover-shadow">
+                <li class="w3-black w3-xlarge w3-padding-32">Get-togethers</li>
+                <div class="get-pricing">
+                    <li class="w3-padding-16"><span style="background-color: white;font-size: large;font-weight: bold;">Decorations<br> <br>Catering<br><br>Invitation Cards</span></li>
+                    <!--<li class="w3-padding-16"><b>50</b> Domains</li>
+                    <li class="w3-padding-16"><b>Endless</b> Support</li> -->
+                    <li class="w3-padding-16">
+                        <h2 class="w3-wide"><span style="background-color: black; color:white">Rs.11,999</h2></span>
+                    </li>
+                    <li class="w3-light-grey w3-padding-24">
+                        <button class="w3-button w3-black w3-padding-large">Book</button>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+    <h3 class="w3-center">CONTACT</h3>
+    <p class="w3-center w3-large">For more Details, Contact as through;</p>
+    <div style="margin-top:48px">
+        <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Madurai,TamilNadu,India</p>
+        <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +91 9842765431</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: momentmakers@gmail.com</p>
+        <br>
+        <form action="/action_page.php" target="_blank">
+            <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+            <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+            <p>
+                <button class="w3-button w3-black" type="submit">
+                    <i class="fa fa-paper-plane"></i> SEND FEEDBACK
+                </button>
+            </p>
+        </form>
+        <!-- Image of location/map -->
+        <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale" style="width:100%;margin-top:48px"> -->
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+    <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+    <div class="w3-xlarge w3-section">
+        <i class="fa fa-facebook-official w3-hover-opacity"></i>
+        <i class="fa fa-instagram w3-hover-opacity"></i>
+        <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+        <i class="fa fa-twitter w3-hover-opacity"></i>
+        <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </div>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>

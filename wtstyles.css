@@ -1,0 +1,26 @@
+/* styles added */
+.logo{
+font-size:70%;
+}
+.black{
+  color:black;
+}
+.w3-padding-16{
+    padding-top:48px!important;
+    padding-bottom:48px!important;
+}
+.bday-pricing{
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/bday.jpeg");
+}
+.marriage-pricing{
+    background-position: center;
+    background-image: url("images/marriage.jpeg");
+    background-size: cover;
+}
+.get-pricing{
+    background-position: center;
+    background-size: cover;
+    background-image: url("images/get.jpeg");
+}
